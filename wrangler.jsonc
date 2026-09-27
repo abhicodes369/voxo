@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "voxo",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist",
+    // Client-side routing: unknown paths fall through to index.html.
+    "not_found_handling": "single-page-application"
+  }
+}
