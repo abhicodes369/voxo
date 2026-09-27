@@ -3,7 +3,7 @@
 A social app front end — feed, stories, reels, chat, search and settings — built as a
 polished, motion-first mobile web experience.
 
-**Live:** _(added after the first Cloudflare deploy)_
+**Live:** https://voxo-1xx.pages.dev
 
 ## What's in it
 
@@ -54,8 +54,8 @@ npm run dev
 
 ## Deploying
 
-Hosted on Cloudflare Workers static assets. [`wrangler.jsonc`](wrangler.jsonc) sets
-`not_found_handling: "single-page-application"` so client-side routes resolve on a hard refresh.
+Hosted on Cloudflare Pages. [`public/_redirects`](public/_redirects) sends unmatched paths to
+`index.html`, so a hard refresh on `/profile` or `/reels` still resolves.
 
 ```bash
 npx wrangler login   # once

@@ -8,8 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "deploy": "npm run build && wrangler deploy",
-    "cf": "wrangler dev"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name voxo --branch main --commit-dirty=true"
   },
   "dependencies": {
     "framer-motion": "^13.4.4",
